@@ -12,13 +12,13 @@ const VehicleDetails = () => {
     const fetchData = async () => {
       try {
         // Auto-login logic
-        // const email = "dev@gmail.com";
-        // const password = "dev123";
+        const email = "dev@gmail.com";
+        const password = "dev123";
         const loginRes = await jwtAxios.post("auth/accessToken"
-        //   , {
-        //   email,
-        //   password,
-        // }
+          , {
+          email,
+          password,
+        }
         );
 
         console.log(loginRes.data);
